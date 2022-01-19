@@ -1,0 +1,33 @@
+{
+  "name": "hainan-handle",
+  "version": "1.0.0",
+  "description": "Nuxt + Electron",
+  "author": "juwin_49 <912150269@qq.com>",
+  "private": true,
+  "main": "main.js",
+  "build": {
+    "appId": "",
+    "directories": {
+      "buildResources": "static"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true
+    }    
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=DEV electron .",
+    "build": "nuxt build && electron-builder"
+  },
+  "dependencies": {
+    "nuxt": "^1.4.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "electron": "2.0.0-beta.7",
+    "electron-builder": "^20.8.1",
+    "electron-devtools-installer": "^2.2.3",
+    "log4js": "^6.3.0"
+  }
+}

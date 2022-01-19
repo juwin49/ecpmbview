@@ -1,0 +1,56 @@
+# 本文件为功能信息的配置文件，在此文件目录下
+# 运行 node make.js 文件路径 命令会生成中文的数据文件
+# 运行 node make.js 文件路径 _en 命令会生成英文的数据文件
+# 生成的文件在 ../data 目录
+# 不同语言通过 | 分隔开
+# 如 name: 常用业务|Common|常用業務
+
+
+menu:
+  lost: 挂失|lost
+  reissue: 同卡补卡|reissue
+  indentity: 身份证模块|indentity
+  faceRecognition: 人脸识别模块|faceRecognition
+  fingerRecognition: 指纹授权模块|fingerRecognition
+  wirteCard: 读写卡模块|wirteCard
+
+device:
+  # 身份证模块
+  identity: 
+    loadingtext: 正在加载身份证模块|Loading ID card module
+    readCard: 正在读取身份证信息|Reading ID information
+    getourCard: 请取走身份证|Please take your ID card
+    judgeAge: 该业务需年满16岁|You are not enough 16
+    judgeExpiration: 您的身份证已过期|Your ID card has expired
+  # 指纹仪模块
+  fingerRecognition:
+    loadingtext: 正在加载指纹模块|Loading ID finger module
+    readFingerprint: 请放置您需要验证的手指|Please fingerprint authentication
+    getFingerprint: 指纹验证中...|Fingerprint authenticating.....
+  # 人脸认证
+  faceRecognition:
+    pleaseDetection: 请进行活体检测|Please live detection
+    detectionPassed: 活体检测通过|Live detection passed
+    recognitionLoading: 人脸识别中，请稍后|In face recognition, please wait
+    notPasses: 人脸比对不通过|Face alignment does not passes
+    pleaseAgain: 请再次进行人脸比对|Please do face comparison again
+    notVideoMiddle: 人脸不在视频中间|Face is not in the middle of the video
+    misalignmentCamera: 人脸未对准摄像头|Face misalignment camera
+    notVideo: 人脸不在视频里|The face is not in the video
+    failed: 人脸比对不通过|Face comparison failed
+    warn: 为了保护您账户的安全，我们需要采集并且核对您的照片，请取下口罩 |To protect the security of your account, we need to collect and check your photos
+    info: 帽子等遮挡物，直视屏幕正上方摄像头|Please remove the mask, cap and other shielding, and look directly at the camera directly above the screen
+  # 密码键盘
+  pinpad:
+    enterPassword: 请输入密码|Please input a password
+    enterPasswordAgain: 请再次输入密码|Please enter the password again
+    initialPassword: 请输入初始密码|Please enter the initial password
+    newPassword: 请输入新密码|Please enter a new password
+    newPasswordAgain: 请再次输入新密码|Please enter the new password again
+    loadingtext: 业务处理中，请稍后|Business processing, please wait
+    activatedSuccessfully: 金融账户激活成功|Financial account activated successfully
+    passwordWarn: 两次新密码输入不一致，请输入新密码|The two new password entries are inconsistent, Please enter a new password
+    newPasswordError: 初始密码错误，请重新输入初始密码|Initial password error, Please re - enter your original password
+
+
+
